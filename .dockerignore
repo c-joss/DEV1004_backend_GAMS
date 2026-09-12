@@ -1,1 +1,11 @@
 node_modules
+.git*
+.env*
+!.env.example
+coverage
+*.md
+LICENSE
+img
+docker-compose*.yml
+Dockerfile*
+.dockerignore
