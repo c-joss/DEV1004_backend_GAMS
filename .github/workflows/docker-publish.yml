@@ -28,7 +28,7 @@ jobs:
             -e JWT_SECRET=${{ secrets.JWT_SECRET }} \
             -e MONGODB_URI=${{ secrets.MONGODB_URI }} \
             ${{ secrets.DOCKERHUB_USERNAME }}/gams-backend:1.0.0-prod
-          sleep 5
+          sleep 10
           docker logs gams-backend-ci
           docker stop gams-backend-ci
 
